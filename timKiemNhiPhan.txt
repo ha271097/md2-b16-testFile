@@ -1,0 +1,19 @@
+Tìm Kiếm Nhị Phân
+Binary Search
+
+*Là thuật toán  tìm giá trị cần tìm  trong 1 mảng " ĐÃ ĐƯỢC SẮP XẾP "
+   - So sánh giá trị cần tìm với giá trị ở giữa mảng, nếu 2 giá trị không bằng nhau thì phẩn nửa không chứa giá trị cần tìm sẽ bị loại bỏ và tiếp tục tìm kiếm trên phần nửa còn lại.
+    ( Phần tử cần tìm lớn hơn thì tìm bên phải, nhỏ hơn bên trái.)
+   - Cứ tiếp tục làm vậy cho đến khi tìm thấy giá trị
+   - Nếu phép tìm kiếm kết thúc khi nửa còn lại trống thì giá trị cần tìm k có trong mảng.
+
+
+*Ví dụ:
+  b1. Sắp xếp các phân tử trong mảng từ bé đến lớn, chọn phần tử cần tìm X
+  b2. Đặt hai con trỏ low và  hight  ở đầu và cuối  tương đương phần tử nhỏ nhất và phần tử lớn nhất.
+  b3. So Sánh X với phần tử ở giữa low + (low + hight )/2. // Vị trí phần tử, làm tròn về số nguyên
+   +, Nếu X == Mid thì trả về mid
+   +, Nếu X> mid thì so sánh tiếp bên phải mảng  bằng cách thay low = mid +1
+   +, Nếu X< Mid thì so sánh tiếp bên trái mảng bằng thay hight = mid -1
+  b4. Lặp lại bước 3 đến khi tìm đc phần tử hoặc low == hight
+  b5. kết thúc giải thuật.
